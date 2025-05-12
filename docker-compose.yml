@@ -1,0 +1,35 @@
+services:
+  frontend:
+    container_name: automotive_frontend
+    image: automotive_frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    container_name: automotive_backend
+    image: automotive_backend
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:youssef21@db:5432/automotive_db
+    depends_on:
+      - db
+
+  db:
+    container_name: automotive_db
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: youssef21
+      POSTGRES_DB: automotive_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
