@@ -1,9 +1,9 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import styles from "./navbar.module.css";
+import styles from "./Navbar.module.css";
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className={`bg-dark py-1 shadow`}>
+    <Navbar expand="lg" className={`bg-dark py-1 shadow fixed-top`}>
       <Container>
         <Navbar.Brand href="#" className={`${styles.logo} fw-bold fs-1 text-white`}>
           CARZ

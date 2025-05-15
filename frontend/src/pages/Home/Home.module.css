@@ -3,6 +3,11 @@
     position: relative;
 }
 
+.header{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 3, 13, 0.742), rgba(4, 9, 30, 0.5)),url('../../assets/images/background.jpeg') ;
+}
+
 .rectangle {
     width: 40%;
     height: 70%;
@@ -22,7 +27,8 @@
 .text {
     font-size: 100px;
     position: absolute;
-    top: 0%;
+    top: 15%;
+    right: 0%;
     color: var(--text-color);
-    z-index: 1;
+    font-family: "Nova cut";
 }
