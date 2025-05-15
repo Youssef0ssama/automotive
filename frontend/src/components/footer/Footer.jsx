@@ -6,17 +6,17 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light py-3">
       <Container>
-        <Row>
-          <Col md={9}>
-            <h3 className={`${styles.logo} fw-bold fs-1`}>CARZ</h3>
+        <Row className={`${styles.footer_brand}`}>
+          <Col md={8}>
+            <h3 className={`fw-bold fs-1`}>CARZ</h3>
           </Col>
-          <Col md={3} className="text-end">
+          <Col md={4} className="text-end">
             <p className="fw-medium m-0">Drive Your Dreams , Where quality meets the road.</p>
           </Col>
         </Row>

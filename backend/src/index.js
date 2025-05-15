@@ -19,10 +19,10 @@ const pool = new Pool({
 });
 
 // Example route
-app.get('/api/users', async (req, res) => {
-  const result = await pool.query('SELECT * FROM users');
-  res.json(result.rows);
-});
+// app.get('/api/users', async (req, res) => {
+//   const result = await pool.query('SELECT * FROM users');
+//   res.json(result.rows);
+// });
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -1,0 +1,72 @@
+@import url("../../styles/variables.css");
+
+.loginForm {
+  text-align: center;
+}
+
+.title {
+  color: var(--secondary-color);
+}
+
+.signUpLink {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.lostLink {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.formContainer {
+  width: 100%;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.loginButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.facebookButton {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid rgb(2, 123, 216);
+  border-radius: 10px;
+  color: rgb(2, 123, 216);
+}
+
+.googleButton {
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 68, 0);
+  border-radius: 10px;
+  color: rgb(255, 68, 0);
+}
+
+.orContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.or {
+  margin: 0;
+}

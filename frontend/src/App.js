@@ -1,12 +1,15 @@
-import NavBar from "./components/navbar/Navbar";
 import "./styles/variables.css";
+import NavBar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
+import LoginForm from "./pages/login/loginForm";
+import Brands from "./pages/brands/Brands";
 import Home from "./pages/Home/Home";
-import Footer from "./components/footer/Footer";
-
 function App() {
   return (
     <div className="App">
       <NavBar />
+      {/* <LoginForm /> */}
+      {/* <Brands /> */}
       <Home />
       <Footer />
     </div>
