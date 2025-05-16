@@ -1,20 +1,17 @@
 import "./styles/variables.css";
 import NavBar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import LoginForm from "./pages/login/loginForm";
-import Brands from "./pages/brands/Brands";
-import Home from "./pages/Home/Home";
-import Models from "./pages/models/models";
+import RoutesConfig from "./routes/RoutersConfig";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar /> */}
-      {/* <LoginForm /> */}
-      {/* <Brands /> */}
-      <Models />
-      {/* <Home /> */}
-      {/* <Footer /> */}
+      <NavBar />
+      <Router>
+        <RoutesConfig />
+      </Router>
+      <Footer />
     </div>
   );
 }

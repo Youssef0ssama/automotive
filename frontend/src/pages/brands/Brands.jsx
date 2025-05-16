@@ -8,19 +8,23 @@ function Brands() {
   const brands = [
     { name: "BMW", image: bmwImage },
     { name: "Mercedes", image: mercedesImage },
-    { name: "Audi", image: bmwImage }, // Placeholder image
   ];
 
   return (
-    <Container sx={{ py: 5 }}>
-      <Grid container spacing={4}>
-        {brands.map((brand, idx) => (
-          <Grid item key={idx} xs={12} sm={6} md={4}>
-            <BrandCard brandName={brand.name} imageUrl={brand.image} />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <div className="bg-black">
+      <Container sx={{ py: 5 }}>
+        <div className="text-white d-flex align-items-center justify-content-center pt-5">
+          <h1 className="display-4">Brands</h1>
+        </div>
+        <Grid container spacing={4} className="justify-content-center pt-5">
+          {brands.map((brand, idx) => (
+            <Grid item key={idx} xs={12} sm={6} md={4}>
+              <BrandCard brandName={brand.name} imageUrl={brand.image} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </div>
   );
 }
 

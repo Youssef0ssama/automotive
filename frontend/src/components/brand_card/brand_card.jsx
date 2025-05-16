@@ -1,9 +1,25 @@
 import React from "react";
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function BrandCard({ brandName, imageUrl }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/models/`); 
+  };
+
   return (
-    <Card sx={{ maxWidth: 345, borderRadius: 3, boxShadow: 3, mx: "auto" }}>
+    <Card
+      onClick={handleClick}
+      sx={{
+        cursor: "pointer",
+        maxWidth: 345,
+        borderRadius: 3,
+        boxShadow: 3,
+        mx: "auto",
+      }}
+    >
       <CardMedia
         component="img"
         height="180"
