@@ -41,7 +41,7 @@ function Contact() {
   };
 
   return (
-    <div className="bg-black py-5 text-white">
+    <div className="bg-black py-5 text-white mt-5">
       <Container>
         <Row>
           <Col xs={12} className="position-relative">

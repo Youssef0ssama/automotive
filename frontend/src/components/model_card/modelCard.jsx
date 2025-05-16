@@ -1,11 +1,19 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
-function CarCard({ brandName, imageUrl, price }) {
+function ModelCard({ brandName, imageUrl, price}) {
+  const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate(`/car/`); 
+    };
+
   return (
     <Card
+      onClick={handleClick}
       className="bg-dark text-white shadow-lg border-0 rounded-4 overflow-hidden mx-auto"
-      style={{ maxWidth: "345px" }}
+      style={{ maxWidth: "345px", cursor: "pointer" }}
     >
       <Card.Img
         variant="top"
@@ -29,4 +37,4 @@ function CarCard({ brandName, imageUrl, price }) {
   );
 }
 
-export default CarCard;
+export default ModelCard;
